@@ -11,104 +11,95 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.tsx
-            </code>
-            .
+    <div className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}>
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start max-w-4xl">
+        <h1 className="text-2xl font-bold mb-6">FinCEN 314(a) Solutions</h1>
+        
+        <ol className="list-decimal space-y-8 text-sm sm:text-base">
+          <li>
+            <h2 className="font-bold mb-2">314(a) Compliance Monitoring System</h2>
+            <p className="mb-4">Concept: Develop a web-based platform that automates the process of querying and responding to FinCEN 314(a) information requests. The system could integrate directly with a financial institution's transaction monitoring systems to flag suspicious individuals or entities based on FinCEN's queries.</p>
+            <h3 className="font-semibold mb-2">Key Features:</h3>
+            <ul className="list-disc list-inside pl-4 space-y-1">
+              <li>Automated matching of customer records with FinCEN's 314(a) lists.</li>
+              <li>Real-time alerts for any matches found.</li>
+              <li>Pre-built templates for reporting back to FinCEN in case of matches.</li>
+              <li>Audit trail for all actions taken during the 314(a) inquiry process.</li>
+            </ul>
           </li>
-          <li>Save and see your changes instantly.</li>
+
+          <li>
+            <h2 className="font-bold mb-2">FinCEN 314(a) Training Simulator</h2>
+            <p className="mb-4">Concept: Develop a training platform for compliance officers that simulates the FinCEN 314(a) inquiry and reporting process. This could serve as an educational tool for staff within financial institutions.</p>
+            <h3 className="font-semibold mb-2">Key Features:</h3>
+            <ul className="list-disc list-inside pl-4 space-y-1">
+              <li>Realistic simulations of handling 314(a) requests.</li>
+              <li>Timed exercises to simulate urgency.</li>
+              <li>Scoreboard and feedback based on compliance accuracy.</li>
+              <li>Role-playing features that simulate internal and external communications.</li>
+            </ul>
+          </li>
+
+          <li>
+            <h2 className="font-bold mb-2">AML Data Aggregator with 314(a) Alerts</h2>
+            <p className="mb-4">Concept: Build an API-driven aggregator tool that combines multiple external data sources and internal transaction monitoring data to generate suspicious activity alerts related to Section 314(a) inquiries.</p>
+            <h3 className="font-semibold mb-2">Key Features:</h3>
+            <ul className="list-disc list-inside pl-4 space-y-1">
+              <li>Centralized dashboard for monitoring financial compliance risks.</li>
+              <li>Cross-check against FinCEN 314(a) requests.</li>
+              <li>Data export features for internal compliance reporting.</li>
+              <li>Automated alerts to compliance officers.</li>
+            </ul>
+          </li>
+
+          <li>
+            <h2 className="font-bold mb-2">FinCEN 314(a) Data Visualization</h2>
+            <p className="mb-4">Concept: A dashboard tool that visually presents the compliance team with insights into 314(a) requests, response timelines, and potential exposure based on customer data.</p>
+            <h3 className="font-semibold mb-2">Key Features:</h3>
+            <ul className="list-disc list-inside pl-4 space-y-1">
+              <li>Interactive graphs showing the number of requests over time.</li>
+              <li>Visualization of customer or entity exposure to 314(a) requests.</li>
+              <li>Timeline visualization to track responses and escalate overdue items.</li>
+              <li>Exportable reports for audit and compliance.</li>
+            </ul>
+          </li>
+
+          <li>
+            <h2 className="font-bold mb-2">Mobile FinCEN 314(a) Notification App</h2>
+            <p className="mb-4">Concept: Develop a mobile app that alerts compliance officers in real-time about new FinCEN 314(a) inquiries and provides tools for responding on the go.</p>
+            <h3 className="font-semibold mb-2">Key Features:</h3>
+            <ul className="list-disc list-inside pl-4 space-y-1">
+              <li>Real-time push notifications for new inquiries.</li>
+              <li>Access to the institution's full customer database for cross-checking.</li>
+              <li>Workflow for submitting responses directly from the mobile app.</li>
+              <li>Secure login with MFA to ensure regulatory compliance.</li>
+            </ul>
+          </li>
         </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="mt-8">
+          <h2 className="font-bold mb-4">Useful Links for Financial Regulations and Compliance:</h2>
+          <ul className="list-none space-y-4">
+            <li>
+              <a href="https://www.fincen.gov/314a" className="text-blue-600 hover:underline">FinCEN 314(a) Information Sharing Program</a>
+              <p className="text-sm text-gray-600">Provides an overview and details of FinCEN's 314(a) program.</p>
+            </li>
+            <li>
+              <a href="https://home.treasury.gov/policy-issues/office-of-foreign-assets-control-sanctions-programs" className="text-blue-600 hover:underline">Office of Foreign Assets Control (OFAC)</a>
+              <p className="text-sm text-gray-600">Useful for cross-referencing entities from 314(a) requests with OFAC lists.</p>
+            </li>
+            <li>
+              <a href="https://www.fincen.gov" className="text-blue-600 hover:underline">Financial Crimes Enforcement Network (FinCEN)</a>
+              <p className="text-sm text-gray-600">Access to more information about financial crimes and compliance programs.</p>
+            </li>
+          </ul>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      
+      // ... existing footer code ...
     </div>
   );
 }
